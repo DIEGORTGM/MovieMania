@@ -1,0 +1,15 @@
+<h1>Movies List:</h1>
+
+{{#each movies}}
+{{title}}
+{{director}}
+{{/each}}
+
+<div>
+    <form action="/movies" method="POST">
+        <div class="form-group">
+            <input type="text" id="inputValue">
+        </div>
+        <button type="submit" id="search">Search a Movie!</button>
+    </form>
+</div>
