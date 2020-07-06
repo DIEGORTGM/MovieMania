@@ -42,7 +42,6 @@ buttonElement.onclick = function(event) {
         .catch((err) => {
             console.log('Error with search', err)
         })
-
 }
 
 module.exports = app
