@@ -4,15 +4,20 @@ const passport = require("passport")
 
 const User = require("../models/user.model")
 
+//encrypt passwords
 const bcrypt = require("bcrypt")
 const bcryptSalt = 10
 
+//Private page
+// router.get('/private-page', ensureLogin.ensureLoggedIn(), (req, res) => {
+//     res.render('auth/private', { user: req.user });
+// });
 
 // User signup
 router.get("/signup", (req, res) => res.render("auth/signup"))
 router.post("/signup", (req, res, next) => {
 
-    const { username, password } = req.body
+    const { username, password, email } = req.body
 
     if (!username || !password) {
         res.render("auth/signup", { errorMsg: "Rellena el usuario y la contraseña" })
@@ -28,7 +33,7 @@ router.post("/signup", (req, res, next) => {
             const salt = bcrypt.genSaltSync(bcryptSalt)
             const hashPass = bcrypt.hashSync(password, salt)
 
-            User.create({ username, password: hashPass })
+            User.create({ username, password: hashPass, email })
                 .then(() => res.redirect("/"))
                 .catch(() => res.render("auth/signup", { errorMsg: "No se pudo crear el usuario" }))
         })
