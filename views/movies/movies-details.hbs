@@ -1,12 +1,21 @@
 
-<h1>Movie Details:</h1>
+<h1><u>Movie Details:</u></h1>
 
-<h3>Title:</h3>
-{{title}}
+<h2 style="font-weight-bold">{{movie.title}}</h2>
+
 <h3>Director:</h3>
-{{director}}
+{{movie.director}}
+<h3>Duration:</h3>
+<div class="d-flex p-2">{{movie.duration}}<p>mins</p></div>
 <h3>Cast:</h3>
-{{cast}}
+{{movie.cast}}
 <h3>Description:</h3>
-{{description}}
-<h3>Rating: {{rating}}</h3>
+{{movie.synopsis}}
+<h3>Rating: {{movie.rating}}</h3>
+
+<br>
+
+<a href="/movies/list" class="btn btn-sm btn-success">Go back</a>
+
+
+

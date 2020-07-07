@@ -3,9 +3,8 @@ const Schema = mongoose.Schema
 
 const userSchema = new Schema({
     username: String,
-    password: String,
     email: String,
-    favorites: [String],
+    favorites: [{ type: Schema.Types.ObjectId, ref: 'Movie' }],
     imagePath: String,
     password: String
 }, {
