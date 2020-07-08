@@ -4,9 +4,9 @@
 
 
 <div>
-    <form action="/movies" method="POST">
+    <form action="/movies/list" method="POST">
         <div class="form-group">
-            <input type="text" id="inputValue">
+            <input id="searchbar" type="text" name="searchInput" placeholder="Search movies..."> 
         </div>
         <button type="submit" id="search" class="btn btn-sm btn-success">Search</button>
     </form>
@@ -15,26 +15,17 @@
 </div> --}}
 
 
-<div id="movie-searchable">
-    
-    <div class="movie">
-        <section class="section">
-    
-        </section>
-    
-    </div>
-</div>
-
 <br>
 
 <h2>Movies:</h2>
 
 <div class="d-flex flex-column">
 {{#each movies}}
+<div class="d-flex flex-column">{{poster}}</div>
 <div class="d-flex flex-column font-weight-bold">{{title}}</div>
 <div class="d-flex flex-column">{{director}}</div>
 <div class="d-flex flex-column">{{cast}}</div>
-<a href="/movies/{{_id}}" class="btn btn-sm btn-success ">See details</a>
+<a href="/movies/details/{{_id}}" class="btn btn-sm btn-success ">See details</a>
 {{/each}}
 </div>
 

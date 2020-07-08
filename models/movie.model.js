@@ -2,6 +2,7 @@ const mongoose = require("mongoose")
 const Schema = mongoose.Schema
 
 const movieSchema = new Schema({
+    poster: { data: Buffer, contentType: String },
     title: String,
     director: String,
     duration: Number,
@@ -11,6 +12,7 @@ const movieSchema = new Schema({
 }, {
     timestamps: true
 })
+
 
 const Movie = mongoose.model("Movie", movieSchema)
 
