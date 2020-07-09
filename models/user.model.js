@@ -2,11 +2,22 @@ const mongoose = require("mongoose")
 const Schema = mongoose.Schema
 
 const userSchema = new Schema({
-    username: String,
-    email: String,
-    favorites: [{ type: Schema.Types.ObjectId, ref: 'Movie' }],
-    imagePath: String,
-    password: String,
+    username: {
+        type: String,
+    },
+    email: {
+        type: String,
+    },
+    favorites: {
+     type: [Schema.Types.ObjectId], 
+     ref: 'Movie' 
+    },
+    imagePath: {
+        type: String,
+    },
+    password: {
+        type: String,
+    },
     imagePath: {
         type: String,
         default: 'images/avatar.png'

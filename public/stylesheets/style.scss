@@ -1,6 +1,7 @@
 body {
   font-weight: 200;
-  background-image: url(../images/background-index.png);
+  background-image: url('https://footballtalentscout.files.wordpress.com/2015/04/light-grey-background-pattern-i1.jpg');
+  background-size: cover;
 }
 
 h1, h2, h3 {
@@ -24,4 +25,45 @@ h1, h2, h3 {
   width: 140px;
   height: 140px;
   border-radius: 40%;
+}
+
+.moviePoster {
+  width: 400px;
+  height: 500px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+.profileImage {
+  width: 110px;
+  height: 110px;
+}
+
+.button {
+  margin-bottom: 40px;
+}
+
+.profileHead {
+padding-top: 25px;
+}
+
+.profileText {
+  padding-bottom: 30px;
+}
+
+.movieSpace {
+  margin-bottom: 50px;
+}
+
+.detailsButton {
+  margin-top: 20px;
+}
+
+.spotiSpace {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.filmIcon {
+  margin-right: 10px;
 }
