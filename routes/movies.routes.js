@@ -1,6 +1,5 @@
 const express = require('express')
 const Movie = require('../models/movie.model')
-const { response } = require('express')
 const router = express.Router()
 
 router.get('/', (req, res) => res.render('movies/movies'))
