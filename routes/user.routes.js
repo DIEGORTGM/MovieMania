@@ -9,11 +9,12 @@ const cloudUploader = require('../configs/cloudinary.config')
 
 
 router.get('/', ensureLoggedIn('/login'), (req, res, next) => {
+
     User.findById(req.user._id)
+        .populate('favorites')
         .then(theUser => {
             res.render('auth/profile', theUser)
             console.log(theUser);
-
         })
         .catch(err => next(err))
 

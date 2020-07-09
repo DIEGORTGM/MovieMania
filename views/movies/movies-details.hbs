@@ -5,24 +5,41 @@
 <h3>Director:</h3>
 <div class="font-weight-bold">{{movies.director}}</div>
 <h3>Duration:</h3>
-<div class="d-flex p-2 font-weight-bold">{{movies.duration}}<p>mins</p></div>
+<div class="d-flex p-2 font-weight-bold">{{movies.duration}}<p>mins</p>
+</div>
 <h3>Cast:</h3>
 <div class="font-weight-bold">{{movies.cast}}</div>
 <h3>Description:</h3>
 <div class="font-weight-bold">{{movies.synopsis}}</div>
 <h3>Rating: {{movies.rating}}</h3>
-
+{{#if user}}
+<form action="/movies/details/favorites/{{movies._id}}" method="POST">
+    <button type="submit">Add Favorite</button>
+</form>
+{{/if}}
 <br>
 
-<div>
-    {{#each spotify}}
+<h2><u>Music</u><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-music-note" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
+        <path fill-rule="evenodd" d="M9 3v10H8V3h1z" />
+        <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z" />
+    </svg></h3>
 
-    <a href="{{album.external_urls.spotify}}"><img class="spotify-img" src="{{album.images.1.url}}" alt="{{name}}"></a>
+    <br>
+    <div class="row mb-4">
+        {{#each spotify}}
+        <div class="col-md-3">
 
-    <figure>
-        <audio controls src="{{preview_url}}"></audio>
-    </figure>
-{{/each}}
-</div>
+            <h6 class="hola">Album: {{album.name}}</h6>
+            <a href="{{album.external_urls.spotify}}"><img class="spotify-img" src="{{album.images.1.url}}"
+                    alt="{{name}}" ></a>
 
-<a href="/movies/list" class="btn btn-sm btn-success">Go back</a>
+            <figure>
+                <audio controls src="{{preview_url}}"></audio>
+            </figure>
+
+        </div>
+        {{/each}}
+        <a href="/movies/list" class="btn btn-sm btn-success">Go back</a>
+    </div>
