@@ -1,14 +1,12 @@
-
-        <h2>Welcome, {{username}}!</h2>
-        <br>
-        <br>
-        <h2>Your favorite movies:</h2>
-        {{#each user.favourites}}
-        {{/each}}
+<h2>Welcome, {{username}}!</h2>
+<div class="flex-container">
+    <img class="imagenperfil" src={{imagePath}} alt={{username}}>
+</div>
+<h2>Your favorite movies:</h2>
+{{#each user.favourites}}
+{{/each}}
 
 <br>
-
-<img class="imagenperfil" src={{imagePath}} alt={{username}}>
 
 <form action="/profile/editar/{{_id}}" method="POST" enctype="multipart/form-data">
     <input type="file" name="imageFile"><br><br>
@@ -24,5 +22,3 @@
 </form>
 
 <br>
-
-

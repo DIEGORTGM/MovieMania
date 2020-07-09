@@ -10,7 +10,6 @@ const cloudUploader = require('../configs/cloudinary.config')
 
 router.get('/', ensureLoggedIn('/login'), (req, res, next) => {
     User.findById(req.user._id)
-        // TO-DO necesito recoger datos del usario de la base de datos
         .then(theUser => {
             res.render('auth/profile', theUser)
             console.log(theUser);
