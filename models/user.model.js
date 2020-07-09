@@ -6,7 +6,12 @@ const userSchema = new Schema({
     email: String,
     favorites: [{ type: Schema.Types.ObjectId, ref: 'Movie' }],
     imagePath: String,
-    password: String
+    password: String,
+    imagePath: {
+        type: String,
+        default: 'images/avatar.png'
+    }
+
 }, {
     timestamps: true
 })

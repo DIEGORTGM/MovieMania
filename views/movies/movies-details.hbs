@@ -1,4 +1,3 @@
-
 <h1><u>Movie Details:</u></h1>
 
 <h2 style="font-weight-bold">{{movie.title}}</h2>
@@ -6,7 +5,8 @@
 <h3>Director:</h3>
 {{movie.director}}
 <h3>Duration:</h3>
-<div class="d-flex p-2">{{movie.duration}}<p>mins</p></div>
+<div class="d-flex p-2">{{movie.duration}}<p>mins</p>
+</div>
 <h3>Cast:</h3>
 {{movie.cast}}
 <h3>Description:</h3>
@@ -15,7 +15,17 @@
 
 <br>
 
+<div>
+    {{#each spotify}}
+
+    <a href="{{album.external_urls.spotify}}"><img class="spotify-img" src="{{album.images.1.url}}" alt="{{name}}"></a>
+
+    <figure>
+        <audio controls src="{{preview_url}}"></audio>
+    </figure>
+</div>
+
+{{/each}}
+</div>
+
 <a href="/movies/list" class="btn btn-sm btn-success">Go back</a>
-
-
-
