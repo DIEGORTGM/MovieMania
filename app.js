@@ -22,7 +22,10 @@ require('./configs/spotify.config')
 // Routes index
 require('./routes')(app)
 
-//Movie Search 
+
+// Partials
+const hbs = require('hbs')
+hbs.registerPartials(__dirname + '/views/partials')
 
 
 
