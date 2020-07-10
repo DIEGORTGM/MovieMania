@@ -2,17 +2,18 @@
 <div class="flex-container">
     <img class="imagenperfil" src={{imagePath}} alt={{username}}>
 </div>
-<h2>Your favorite movies:</h2>
+<div>
+    <h2><svg width="2em" height="1.5em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+    </svg>Your favorite movies:</h2>
 
-<svg width="2em" height="1.5em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red"
-    xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-</svg>
-<p>Titulo:</p>
-{{#each favorites}}
-{{title}}<br>
-{{/each}}
-
+</div>
+<ol>
+    {{#each favorites}}
+    <li>{{title}}</li>
+    {{/each}}
+</ol>
 <br>
 
 <form action="/profile/editar/{{_id}}" method="POST" enctype="multipart/form-data">
