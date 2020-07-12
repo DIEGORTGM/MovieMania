@@ -1,6 +1,7 @@
-<h2>Welcome, {{username}}!</h2>
+<div class="rounded float-left profileHead">
+<h2 class="profileText">Welcome, {{username}}!</h2>
 <div class="flex-container">
-    <img class="imagenperfil" src={{imagePath}} alt={{username}}>
+    <img class="imagenperfil profileImage" src={{imagePath}} alt={{username}}>
 </div>
 <div>
     <h2><svg width="2em" height="1.5em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red"
@@ -28,5 +29,14 @@
 
     <button type="submit" class="btn btn-sm btn-success ">Edit profile</button>
 </form>
+</div>
 
+<<<<<<< HEAD
 <br>
+=======
+<br>
+
+<h2>Your favorite movies:</h2>
+{{#each user.favourites}}
+{{/each}}
+>>>>>>> diego

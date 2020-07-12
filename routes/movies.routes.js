@@ -13,13 +13,6 @@ router.get('/list', (req, res) => {
       .catch(err => next(new Error(err)))
 })
 
-// router.get('/details/:id', (req, res) => {
-//    Movie.findById(req.params.id)
-//       .then(theMovie => res.render('movies/movies-details', {
-//          movie: theMovie
-//       }))
-//       .catch(err => next(new Error(err)))
-// })
 
 // Movie Search //
 

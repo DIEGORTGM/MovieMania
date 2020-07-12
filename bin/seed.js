@@ -12,7 +12,7 @@ mongoose.connect(`mongodb://localhost/${dbtitle}`, {
 Movie.collection.drop()
 
 const listMovies = [{
-        poster: '../public/images/Goodfellas-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX667_CR0,0,667,999_AL_.jpg',
         title: 'Goodfellas',
         director: 'Martin Scorsese',
         duration: 146,
@@ -21,7 +21,7 @@ const listMovies = [{
         rating: 8.7
     },
     {
-        poster: '../public/images/interstellar-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_SX675_AL_.jpg',
         title: 'Interstellar',
         director: 'Christopher Nolan',
         duration: 169,
@@ -30,7 +30,7 @@ const listMovies = [{
         rating: 8.6
     },
     {
-        poster: '../public/images/LoveActually-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMTY4NjQ5NDc0Nl5BMl5BanBnXkFtZTYwNjk5NDM3._V1_UY1200_CR90,0,630,1200_AL_.jpg',
         title: 'Love Actually',
         director: 'Richard Curtis',
         duration: 135,
@@ -39,7 +39,7 @@ const listMovies = [{
         rating: 7.6
     },
     {
-        poster: '../public/images/happyGilmore-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BZWI2NjliOTYtZjE1OS00YzAyLWJjYTQtYWNmZTQzMTQzNzVjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg',
         title: 'Happy Gilmore',
         director: 'Dennis Dugan',
         duration: 92,
@@ -48,7 +48,7 @@ const listMovies = [{
         rating: 7.0
     },
     {
-        poster: '../public/images/Django-Poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_.jpg',
         title: 'Django Unchained',
         director: 'Quentin Tarantino',
         duration: 165,
@@ -57,7 +57,7 @@ const listMovies = [{
         rating: 8.4
     },
     {
-        poster: '../public/images/shawshankRdemeption-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY1200_CR89,0,630,1200_AL_.jpg',
         title: 'The Shawshank Redemption',
         director: 'Frank Darabont',
         duration: 144,
@@ -66,7 +66,7 @@ const listMovies = [{
         rating: 9.3
     },
     {
-        poster: '../public/images/dark-knight-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg',
         title: 'The Dark Knight',
         director: 'Christopher Nolan',
         duration: 152,
@@ -75,7 +75,7 @@ const listMovies = [{
         rating: 9.0
     },
     {
-        poster: '../public/images/godfather-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
         title: 'The Godfather',
         director: 'Francis Ford Coppola',
         duration: 175,
@@ -84,7 +84,7 @@ const listMovies = [{
         rating: 9.2
     },
     {
-        poster: '../public/images/godfather2-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
         title: 'The Godfather: Part II',
         director: 'Francis Ford Coppola',
         duration: 202,
@@ -93,7 +93,7 @@ const listMovies = [{
         rating: 9.0
     },
     {
-        poster: '../public/images/12men-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMWU4N2FjNzYtNTVkNC00NzQ0LTg0MjAtYTJlMjFhNGUxZDFmXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_.jpg',
         title: '12 Angry Men',
         director: 'Sidney Lumet',
         duration: 156,
@@ -102,7 +102,7 @@ const listMovies = [{
         rating: 8.9
     },
     {
-        poster: '../public/images/schindlersList-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg',
         title: "Schindler's List",
         director: 'Steven Spielberg',
         duration: 195,
@@ -111,7 +111,7 @@ const listMovies = [{
         rating: 8.9
     },
     {
-        poster: '../public/images/PulpFiction-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
         title: 'Pulp Fiction',
         director: 'Quentin Tarantino',
         duration: 154,
@@ -120,7 +120,7 @@ const listMovies = [{
         rating: 8.9
     },
     {
-        poster: '../public/images/goodBadUgly-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BOTQ5NDI3MTI4MF5BMl5BanBnXkFtZTgwNDQ4ODE5MDE@._V1_.jpg',
         title: 'The Good, the Bad and the Ugly',
         director: 'Sergio Leone',
         duration: 178,
@@ -129,7 +129,7 @@ const listMovies = [{
         rating: 8.8
     },
     {
-        poster: '../public/images/fightClub-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY1200_CR85,0,630,1200_AL_.jpg',
         title: 'Fight Club',
         director: 'David Fincher',
         duration: 139,
@@ -138,7 +138,7 @@ const listMovies = [{
         rating: 8.8
     },
     {
-        poster: '../public/images/forrestGump-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BOWNmNzdjYjQtZjIyOS00MDhiLTg4ZWUtZGZkZDE4ZDQwZTY1XkEyXkFqcGdeQXVyODk2ODI3MTU@._V1_.jpg',
         title: 'Forrest Gump',
         director: 'Robert Zemeckis',
         duration: 142,
@@ -147,7 +147,7 @@ const listMovies = [{
         rating: 8.8
     },
     {
-        poster: '../public/images/matrix-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY1200_CR84,0,630,1200_AL_.jpg',
         title: 'The Matrix',
         director: 'The Wachowski Brothers',
         duration: 136,
@@ -156,7 +156,7 @@ const listMovies = [{
         rating: 8.7
     },
     {
-        poster: '../public/images/oneFlew-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY1200_CR88,0,630,1200_AL_.jpg',
         title: "One Flew Over the Cuckoo's Nest",
         director: 'Milos Forman',
         duration: 133,
@@ -165,7 +165,7 @@ const listMovies = [{
         rating: 8.7
     },
     {
-        poster: '../public/images/sevenSamurai-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMTQ1MDMxODMyN15BMl5BanBnXkFtZTgwNjM2OTE4MzE@._V1_.jpg',
         title: 'Seven Samurai',
         director: 'Akira Kurosawa',
         duration: 207,
@@ -174,7 +174,7 @@ const listMovies = [{
         rating: 8.6
     },
     {
-        poster: '../public/images/se7en-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg',
         title: 'Se7en',
         director: 'David Fincher',
         duration: 127,
@@ -183,7 +183,7 @@ const listMovies = [{
         rating: 8.6
     },
     {
-        poster: '../public/images/laVita-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BYmJmM2Q4NmMtYThmNC00ZjRlLWEyZmItZTIwOTBlZDQ3NTQ1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg',
         title: 'La vita è bella',
         director: 'Roberto Benigni',
         duration: 116,
@@ -192,7 +192,7 @@ const listMovies = [{
         rating: 8.6
     },
     {
-        poster: '../public/images/CityofGod-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BNDJiNTEwMjMtOGQ1ZC00OTczLWFjZjctZWQ0MGJjZmFkMjcwXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg',
         title: 'Cidade de Deus',
         director: 'Fernando Meirelles',
         duration: 130,
@@ -201,7 +201,7 @@ const listMovies = [{
         rating: 8.6
     },
     {
-        poster: '../public/images/silenceLambs-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY1200_CR91,0,630,1200_AL_.jpg',
         title: 'The Silence of the Lambs',
         director: 'Jonathan Demme',
         duration: 118,
@@ -210,7 +210,7 @@ const listMovies = [{
         rating: 8.6
     },
     {
-        poster: '../public/images/privateRyan-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UY1200_CR93,0,630,1200_AL_.jpg',
         title: 'Saving Private Ryan',
         director: 'Steven Spielberg',
         duration: 169,
@@ -219,7 +219,7 @@ const listMovies = [{
         rating: 8.6
     },
     {
-        poster: '../public/images/parasite-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg',
         title: 'Parasite',
         director: 'Bong Joon Ho',
         duration: 132,
@@ -228,7 +228,7 @@ const listMovies = [{
         rating: 8.6
     },
     {
-        poster: '../public/images/greenMile-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_UY1200_CR90,0,630,1200_AL_.jpg',
         title: 'The Green Mile',
         director: 'Frank Darabont',
         duration: 189,
@@ -237,7 +237,7 @@ const listMovies = [{
         rating: 8.6
     },
     {
-        poster: '../public/images/leon-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BZDAwYTlhMDEtNTg0OS00NDY2LWJjOWItNWY3YTZkM2UxYzUzXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY1200_CR111,0,630,1200_AL_.jpg',
         title: 'Léon: The Professional',
         director: 'Luc Besson',
         duration: 110,
@@ -246,7 +246,7 @@ const listMovies = [{
         rating: 8.5
     },
     {
-        poster: '../public/images/usualSuspects-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BYTViNjMyNmUtNDFkNC00ZDRlLThmMDUtZDU2YWE4NGI2ZjVmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg',
         title: 'The Usual Suspects',
         director: 'Bryan Singer',
         duration: 106,
@@ -255,7 +255,7 @@ const listMovies = [{
         rating: 8.5
     },
     {
-        poster: '../public/images/lionKing-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_.jpg',
         title: 'The Lion King',
         director: 'Roger Allers',
         duration: 88,
@@ -264,7 +264,7 @@ const listMovies = [{
         rating: 8.5
     },
     {
-        poster: '../public/images/backFuture-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY1200_CR71,0,630,1200_AL_.jpg',
         title: 'Back to the Future',
         director: 'Robert Zemeckis',
         duration: 116,
@@ -273,7 +273,7 @@ const listMovies = [{
         rating: 8.5
     },
     {
-        poster: '../public/images/pianist-poster.jpg',
+        poster: 'https://m.media-amazon.com/images/M/MV5BOWRiZDIxZjktMTA1NC00MDQ2LWEzMjUtMTliZmY3NjQ3ODJiXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY1200_CR119,0,630,1200_AL_.jpg',
         title: 'The Pianist',
         director: 'Roman Polanski',
         duration: 106,
