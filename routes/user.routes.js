@@ -9,11 +9,12 @@ const cloudUploader = require('../configs/cloudinary.config')
 
 
 router.get('/', ensureLoggedIn('/login'), (req, res, next) => {
+
     User.findById(req.user._id)
+        .populate('favorites')
         .then(theUser => {
             res.render('auth/profile', theUser)
             console.log(theUser);
-
         })
         .catch(err => next(err))
 
@@ -21,7 +22,8 @@ router.get('/', ensureLoggedIn('/login'), (req, res, next) => {
 
 router.post('/editar/:id', cloudUploader.single('imageFile'), (req, res, next) => {
     const { username, email } = req.body
-    User.findByIdAndUpdate(req.user._id, { username, email: email, imagePath: req.file.url })
+    User.findByIdAndUpdate(req.user._id, {
+        username, email: email, imagePath: req.file ? req.file.url : req.user.imagePath })
         .then(() => res.redirect('/profile'))
         .catch(err => next(new Error(err)))
 })
